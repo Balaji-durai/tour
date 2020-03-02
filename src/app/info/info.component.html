@@ -1,0 +1,9 @@
+
+<div *ngIf="infoService.infos.length">
+
+    <h2>Infos</h2>
+    <button class="clear"
+            (click)="infoService.clear()">clear</button>
+    <div *ngFor='let info of infoService.infos'> {{info}} </div>
+  
+  </div>

@@ -1,0 +1,10 @@
+<h3>Top States</h3>
+<div class="grid grid-pad">
+  <a *ngFor="let state of IndiaState" class="col-1-4"
+      routerLink="/detail/{{state.id}}" >
+    <div class="module hero">
+      <h4>{{state.name}}</h4>
+    </div>
+  </a>
+</div>
+<app-state-search></app-state-search>

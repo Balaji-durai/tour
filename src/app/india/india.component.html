@@ -1,0 +1,19 @@
+<h2>States</h2>
+
+<div>
+  <label>State name:
+    <input #stateName />
+  </label>
+  <button (click)="add(stateName.value); stateName.value=''"> add
+  </button>
+</div>
+
+<ul class="heroes">
+  <li *ngFor="let state of uhan" >
+    <a routerLink="/detail/{{state.id}}">
+    <span class="badge">{{state.id}}</span> {{state.name}} 
+  </a>
+  <button class="delete" title="delete state"
+  (click)="delete(state)">x</button>
+ </li>
+</ul>
